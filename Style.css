@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0px;
+}
+
+div.card {
+    width: 850px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.container {
+    min-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the three events section */
+section .events {
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    float: right;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: green;
+}
+
+a {
+    text-decoration: none;
+    color: #5673C8;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+/* paragraph tag decoration */
+p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+}
+
+/* row and column decoration */
+.row {
+    margin: 0px -18px;
+    padding: 8px;
+}
+
+.row > .column {
+    min-height: 480px;
+    padding: 6px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* content decoration */
+.content {
+    background-color: white;
+    padding: 8px;
+    border: 2px solid gray;
+    min-height: 250px;
+}
+
+/* window size 850 width set */
+@media screen and (max-width: 800px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* window size 400 width set */
+@media screen and (max-width: 100px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    color: #555;
+}
+
+.section p {
+    line-height: 1.6;
+}
+
+.section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.section .sub-section {
+    margin-left: 20px;
+}
